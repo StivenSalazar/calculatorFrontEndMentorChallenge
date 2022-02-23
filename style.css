@@ -1,0 +1,42 @@
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 10px; */
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+}
+
+.header {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.result {
+    grid-column: 2;
+    justify-content: end;
+
+    background-color: hsl(224, 36%, 15%);
+}
+
+.buttons {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+
+    color: hsl(225, 21%, 49%);
+    background-color: whitesmoke;
+
+
+}
